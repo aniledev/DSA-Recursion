@@ -42,7 +42,6 @@ function powerCalculator(base, exponent) {
   }
 }
 powerCalculator(3, 4);
-console.log(powerCalculator(3, 4));
 
 /* 
 3. Reverse String
@@ -70,5 +69,17 @@ function reverse(string) {
     return letter + reverse(remaining);
   }
 }
+reverse("reverse");
 
-console.log(reverse("word"));
+/*
+Calculate the nth triangular number. A triangular number counts the objects that can form an equilateral triangle. The nth triangular number is the number of dots composing a triangle with n dots on a side, and is equal to the sum of the n natural numbers from 1 to n. This is the Triangular Number Sequence: 1, 3, 6, 10, 15, 21, 28, 36, 45.
+
+input: 10 (number)
+output: 55 (number)
+
+*/
+
+function nthCalc(number) {
+  // base case, if the number is 1
+  //recursive case, the number -
+}
