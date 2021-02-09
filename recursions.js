@@ -81,5 +81,8 @@ output: 55 (number)
 
 function nthCalc(number) {
   // base case, if the number is 1
+  if (number === 1) {
+    return number;
+  }
   //recursive case, the number -
 }
