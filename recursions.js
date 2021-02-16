@@ -89,4 +89,23 @@ function nthCalc(number) {
     return number + nthCalc(number - 1);
   }
 }
-console.log(nthCalc(10));
+nthCalc(11);
+
+/* 
+Write a recursive function that splits a string based on a separator (similar to String.prototype.split). Don't use JS array's split function to solve this problem.
+Input: "02/20/2020"
+Output: ["02", "20", "2020"]
+
+Input: string
+Output: array of strings
+*/
+
+function stringSplitter(string) {
+  const output = new Array();
+  if (string.length < 2) {
+    return output.push(string);
+  }
+  else {}
+}
+
+
