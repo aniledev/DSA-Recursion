@@ -139,3 +139,14 @@ Input: 7
 Output: 120
 */
 
+function factorial(number) {
+  // base case
+  if (number === 1) {
+    return 1;
+    // recursive case
+  } else {
+    return number * factorial(number - 1);
+  }
+}
+
+console.log(factorial(7));
