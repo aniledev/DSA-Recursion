@@ -100,12 +100,15 @@ Input: string
 Output: array of strings
 */
 
-function stringSplitter(string) {
-  const output = new Array();
-  if (string.length < 2) {
-    return output.push(string);
+function stringSplitter(string, symbol) {
+  if (!string) {
+    return "";
   }
-  else {}
+
+  if (string[0] === symbol) {
+    return stringSplitter(string.slice(1), symbol);
+  } else if (string[0] !== symbol) {
+    return string[0] + stringSplitter(string.slice(1), symbol);
+  }
 }
-
-
+stringSplitter("03/12/1994", "/");
