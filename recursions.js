@@ -92,7 +92,7 @@ function nthCalc(number) {
 nthCalc(11);
 
 /* 
-Write a recursive function that splits a string based on a separator (similar to String.prototype.split). Don't use JS array's split function to solve this problem.
+5. Write a recursive function that splits a string based on a separator (similar to String.prototype.split). Don't use JS array's split function to solve this problem.
 Input: "02/20/2020"
 Output: ["02", "20", "2020"]
 
@@ -153,7 +153,40 @@ console.log(factorial(7));
 
 /* 
 8. Find a way out of the maze
-You have entered a Maze and need to find your way out of it. There are more than one possible paths through the Maze to the single exit point. Write a recursive function that will help you find a possible path through the maze.
+You have entered a Maze and need to find your way out of it. There are more than one possible paths 
+through the Maze to the single exit point. Write a recursive function that will help you find a 
+possible path through the maze.
 Input:
 Output:
+*/
+
+/* 
+9. Find all the ways out of the maze
+Use the above maze and modify your solution so it finds All the possible exit paths through the Maze. 
+Input:
+Output:
+*/
+
+/* 
+10. Anagrams
+An anagram is any word or phrase that uses the letters of a given ("subject") word or phrase in another, 
+rearranged order. Write a function that creates an anagram list, listing all the rearrangements of a given 
+word. For example, if the user types "east", the program should list all 24 permutations, including "eats", 
+"etas", "teas", and non-words like "tsae".
+Input: the
+Output: the, teh, hte, het, eth, eht
+*/
+
+/* 
+11. Organization Chart
+Write a recursive function that prints the following organization chart. Your output should be as shown below 
+with proper indentation to show the hierarchy. You may store the org chart in an object and send that as an 
+input to your program.
+*/
+
+/* 
+11. Binary Representation
+Write a recursive function that prints out the binary representation of a given number. For example, the 
+program should take 3 as an input and print 11 as output, or 25 as an input and print 11001 as an output. Note 
+that the binary representation of 0 should be 0.
 */
