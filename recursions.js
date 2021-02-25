@@ -173,9 +173,24 @@ An anagram is any word or phrase that uses the letters of a given ("subject") wo
 rearranged order. Write a function that creates an anagram list, listing all the rearrangements of a given 
 word. For example, if the user types "east", the program should list all 24 permutations, including "eats", 
 "etas", "teas", and non-words like "tsae".
-Input: the
-Output: the, teh, hte, het, eth, eht
+Input: "the"
+Output: ["the", "teh", "hte", "het", "eth", "eht"]
 */
+
+function anagram(word) {
+  // base case
+  // create an empty array to hold the output
+  const list = [];
+  if (word.length === 1) {
+    list.push(word);
+    return list;
+  }
+  // if the word parameter has 1 character, then add the word to the list
+ 
+  // recursive case
+}
+
+console.log(anagram("the"));
 
 /* 
 11. Organization Chart
