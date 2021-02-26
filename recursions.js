@@ -195,7 +195,7 @@ function anagram(word) {
     const prefix = word[i];
     // create a variable to hold the rest of the word, remaining character indexes
     const remaining = word.substring(0, i) + word.substring(i + 1);
-    let words = anagram(remaining);
+    let words = anagram(remaining); // this will return an array saved to the words variable
     for (let j = 0; j < words.length; j++) {
       list.push(prefix + words[j]);
     }
