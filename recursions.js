@@ -178,19 +178,32 @@ Output: ["the", "teh", "hte", "het", "eth", "eht"]
 */
 
 function anagram(word) {
-  // base case
+  // base case, if the word parameter has 1 character, then add the word to the list
   // create an empty array to hold the output
   const list = [];
+
   if (word.length === 1) {
     list.push(word);
     return list;
   }
-  // if the word parameter has 1 character, then add the word to the list
- 
+
   // recursive case
+  // use a for loop to loop through the word parameter
+
+  for (let i = 0; i < word.length; i++) {
+    // create a variable to hold the prefix of the word, the first character
+    const prefix = word[i];
+    // create a variable to hold the rest of the word, remaining character indexes
+    const remaining = word.substring(0, i) + word.substring(i + 1);
+    let words = anagram(remaining);
+    for (let j = 0; j < words.length; j++) {
+      list.push(prefix + words[j]);
+    }
+  }
+  return list;
 }
 
-console.log(anagram("the"));
+console.log(anagram("help"));
 
 /* 
 11. Organization Chart
