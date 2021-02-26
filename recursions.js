@@ -263,8 +263,20 @@ const org = {
   },
 };
 
+// use default indentation as parameter
+function orgChart(obj, indent = "") {
+  // create an empty string to hold the output
+  let output = "";
+  // use for in loop to target each key in the org object
+  for (let key in obj) {
+    output = output + indent + key + "\n";
+    output = output + orgChart(obj[key], indent + "     ");
+  }
+  return output;
+}
 
 
+console.log(orgChart(org));
 /* 
 11. Binary Representation
 Write a recursive function that prints out the binary representation of a given number. For example, the 
