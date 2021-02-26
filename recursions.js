@@ -212,6 +212,59 @@ with proper indentation to show the hierarchy. You may store the org chart in an
 input to your program.
 */
 
+// store  org chart as an object
+const org = {
+  Zuckerberg: {
+    Schroepfer: {
+      Bosworth: {
+        Steve: {},
+        Kyle: {},
+        Andra: {},
+      },
+      Zhao: {
+        Richie: {},
+        Sofia: {},
+      },
+    },
+    Schrage: {
+      VanDyck: {
+        Sabrina: {},
+        Michelle: {},
+        Josh: {},
+      },
+      Swain: {
+        Blanch: {},
+        Tom: {},
+        Joe: {},
+      },
+    },
+    Sandberg: {
+      Goler: {
+        Eddie: {},
+        Julie: {},
+        Annie: {},
+      },
+      Hernandez: {
+        Rowi: {},
+        Inga: {},
+        Morgan: {},
+      },
+      Moissinac: {
+        Amy: {},
+        Chuck: {},
+        Vinni: {},
+      },
+      Kelley: {
+        Eric: {},
+        Ana: {},
+        Wes: {},
+      },
+    },
+  },
+};
+
+
+
 /* 
 11. Binary Representation
 Write a recursive function that prints out the binary representation of a given number. For example, the 
