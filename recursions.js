@@ -275,11 +275,24 @@ function orgChart(obj, indent = "") {
   return output;
 }
 
-
 console.log(orgChart(org));
+
 /* 
 11. Binary Representation
 Write a recursive function that prints out the binary representation of a given number. For example, the 
 program should take 3 as an input and print 11 as output, or 25 as an input and print 11001 as an output. Note 
 that the binary representation of 0 should be 0.
+Input: 15
+Output: 1111
 */
+
+function binary(number) {
+  // base case, if the number is 0
+  if (number === 0) {
+    return "";
+  } else {
+    // recusive case
+    return `${binary(Math.floor(number / 2))}${number % 2}`;
+  }
+}
+console.log(binary(15));
